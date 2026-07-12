@@ -4,21 +4,25 @@
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SAMPLE1234"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-SAMPLE1234');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-SAMPLE1234');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snazzy Paws Grooming - Contact</title>
-    <meta name="description" content="Get in touch with Snazzy Paws Grooming. Find our salon location, opening hours, and contact details to ask questions or book your dog's next spa day.">
-    
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <meta name="description"
+        content="Get in touch with Snazzy Paws Grooming. Find our salon location, opening hours, and contact details to ask questions or book your dog's next spa day.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -37,17 +41,20 @@
                 <a class="navbar-brand d-none d-md-flex align-items-center me-4 p-0" href="#">
                     <img src="images/snazzy-paws-logo.png" alt="Snazzy Paws Logo" class="logo-fluid">
                 </a>
-                <button class="navbar-toggler border-0 px-1 shadow-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <button class="navbar-toggler border-0 px-1 shadow-none ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse flex-column align-items-stretch" id="navbarContent">
-                    <h1 class="d-none d-md-block m-0 mb-2 fs-fluid-title text-white text-center">Snazzy Paws Grooming</h1>
+                    <h1 class="d-none d-md-block m-0 mb-2 fs-fluid-title text-white text-center">Snazzy Paws Grooming
+                    </h1>
                     <ul class="navbar-nav nav-fill w-100 snazzy-nav gap-2 gap-md-0 mt-3 mt-md-0 text-center">
                         <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link fw-semibold" href="services.html">Services</a></li>
                         <li class="nav-item"><a class="nav-link fw-semibold" href="gallery.html">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link fw-semibold" href="booking.html">Booking</a></li>
-                        <li class="nav-item"><a class="nav-link active fw-semibold" href="contact.html" aria-current="page">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-semibold" href="contact.html"
+                                aria-current="page">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,13 +69,14 @@
 
         <div class="container-fluid position-relative z-2 px-5">
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-3 card-wrapper">
-                
+
                 <div class="col">
                     <div class="card h-100 shadow rounded-4 border-0 p-4 card-1 text-dark">
                         <div class="card-body d-flex flex-column">
                             <h2 class="card-title fw-bold">Get in Touch</h2>
                             <p class="card-text mt-3">Our location, hours, and contact details.</p>
-                            <button type="button" class="btn btn-dark mt-auto align-self-start rounded-4" data-bs-toggle="modal" data-bs-target="#modal-contact-info">View Details</button>
+                            <button type="button" class="btn btn-dark mt-auto align-self-start rounded-4"
+                                data-bs-toggle="modal" data-bs-target="#modal-contact-info">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -78,7 +86,8 @@
                         <div class="card-body d-flex flex-column">
                             <h2 class="card-title fw-bold">Send a Message</h2>
                             <p class="card-text mt-3">Have a question? Send us a quick message.</p>
-                            <button type="button" class="btn btn-dark mt-auto align-self-start rounded-4" data-bs-toggle="modal" data-bs-target="#modal-contact-message">Write Message</button>
+                            <button type="button" class="btn btn-dark mt-auto align-self-start rounded-4"
+                                data-bs-toggle="modal" data-bs-target="#modal-contact-message">Write Message</button>
                         </div>
                     </div>
                 </div>
@@ -88,7 +97,8 @@
                         <div class="card-body d-flex flex-column">
                             <h2 class="card-title fw-bold">Owners & Partners</h2>
                             <p class="card-text mt-3">Learn about our team and trusted local partners.</p>
-                            <button type="button" class="btn btn-dark mt-auto align-self-start rounded-4" data-bs-toggle="modal" data-bs-target="#modal-contact-about">Read More</button>
+                            <button type="button" class="btn btn-dark mt-auto align-self-start rounded-4"
+                                data-bs-toggle="modal" data-bs-target="#modal-contact-about">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -98,24 +108,30 @@
     </main>
 
     <!-- Modals -->
-    
+
     <!-- Contact Info Modal -->
     <div class="modal fade" id="modal-contact-info" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content border-0 shadow card-1 p-4 position-relative text-dark">
-                <button type="button" class="btn btn-dark rounded-circle position-absolute top-0 end-0 m-3 shadow d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; z-index: 1050;" data-bs-dismiss="modal" aria-label="Close">✕</button>
+                <button type="button"
+                    class="btn btn-dark rounded-circle position-absolute top-0 end-0 m-3 shadow d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px; z-index: 1050;" data-bs-dismiss="modal"
+                    aria-label="Close">✕</button>
                 <div class="mt-4 pt-2 w-100 mx-auto" style="max-width: 800px;">
                     <h2>Get in Touch</h2>
                     <p>Our location, hours, and contact details.</p>
-                    
+
                     <ul class="list-unstyled mt-4 fs-5 lh-lg fw-semibold text-dark">
                         <li class="mb-2">📍 Formation Dr The Base Parade, Te Rapa, Hamilton 3200, NZ</li>
                         <li class="mb-2">📞 (07) 555-1234</li>
                         <li class="mb-2">✉️ hello@snazzypaws.co.nz</li>
                     </ul>
-                    
+
                     <div class="rounded-4 overflow-hidden mt-4 shadow-sm bg-white p-1">
-                        <iframe src="https://maps.google.com/maps?q=Formation+Dr,+The+Base+Parade,+Te+Rapa,+Hamilton+3200,+NZ&output=embed" allowfullscreen="" title="Google Maps location of Snazzy Paws Grooming" class="w-100 border-0 rounded-3" style="height: 350px;"></iframe>
+                        <iframe
+                            src="https://maps.google.com/maps?q=Formation+Dr,+The+Base+Parade,+Te+Rapa,+Hamilton+3200,+NZ&output=embed"
+                            allowfullscreen="" title="Google Maps location of Snazzy Paws Grooming"
+                            class="w-100 border-0 rounded-3" style="height: 350px;"></iframe>
                     </div>
 
                     <button type="button" class="btn btn-dark rounded-4 mt-4" data-bs-dismiss="modal">Close</button>
@@ -123,40 +139,57 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Message Form Modal -->
     <div class="modal fade" id="modal-contact-message" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content border-0 shadow card-2 p-4 position-relative text-dark">
-                <button type="button" class="btn btn-dark rounded-circle position-absolute top-0 end-0 m-3 shadow d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; z-index: 1050;" data-bs-dismiss="modal" aria-label="Close">✕</button>
+                <button type="button"
+                    class="btn btn-dark rounded-circle position-absolute top-0 end-0 m-3 shadow d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px; z-index: 1050;" data-bs-dismiss="modal"
+                    aria-label="Close">✕</button>
                 <div class="mt-4 pt-2 w-100 mx-auto" style="max-width: 800px;">
                     <h2>Send a Message</h2>
                     <p>Have a question? Send us a quick message.</p>
 
-                    <div id="message-success" class="alert alert-success text-center d-none shadow-sm rounded-4 mt-4 py-4" role="alert">
+                    <div id="message-success"
+                        class="alert alert-success text-center d-none shadow-sm rounded-4 mt-4 py-4" role="alert">
                         <h3 class="alert-heading fw-bold mb-3">Message Sent! 🐾</h3>
                         <p class="mb-4">Thank you! We have received your inquiry and will respond shortly.</p>
-                        <button type="button" class="btn btn-primary rounded-pill px-4 fw-bold" onclick="document.getElementById('message-success').classList.add('d-none'); document.getElementById('the-contact-form').classList.remove('d-none'); document.getElementById('the-contact-form').reset();">Send Another</button>
+                        <button type="button" class="btn btn-primary rounded-pill px-4 fw-bold"
+                            onclick="document.getElementById('message-success').classList.add('d-none'); document.getElementById('the-contact-form').classList.remove('d-none'); document.getElementById('the-contact-form').reset();">Send
+                            Another</button>
                     </div>
 
                     <form id="the-contact-form" class="mt-4 needs-validation" novalidate>
                         <div class="d-flex flex-column gap-3">
                             <div>
-                                <input type="text" class="form-control form-control-lg bg-white text-dark shadow-sm border-0" aria-label="Your Name" name="name" placeholder="Your Name" required>
+                                <input type="text"
+                                    class="form-control form-control-lg bg-white text-dark shadow-sm border-0"
+                                    aria-label="Your Name" name="name" placeholder="Your Name" required>
                                 <div class="invalid-feedback text-dark fw-bold">Please enter your name.</div>
                             </div>
                             <div>
-                                <input type="email" class="form-control form-control-lg bg-white text-dark shadow-sm border-0" aria-label="Your Email Address" name="email" placeholder="Your Email Address" required>
-                                <div class="invalid-feedback text-dark fw-bold">Please enter a valid email address.</div>
+                                <input type="email"
+                                    class="form-control form-control-lg bg-white text-dark shadow-sm border-0"
+                                    aria-label="Your Email Address" name="email" placeholder="Your Email Address"
+                                    required>
+                                <div class="invalid-feedback text-dark fw-bold">Please enter a valid email address.
+                                </div>
                             </div>
                             <div>
-                                <textarea aria-label="Your Message" name="message" placeholder="Type your message here..." rows="5" class="form-control form-control-lg bg-white text-dark shadow-sm border-0" style="resize: vertical;" required></textarea>
+                                <textarea aria-label="Your Message" name="message"
+                                    placeholder="Type your message here..." rows="5"
+                                    class="form-control form-control-lg bg-white text-dark shadow-sm border-0"
+                                    style="resize: vertical;" required></textarea>
                                 <div class="invalid-feedback text-dark fw-bold">Please enter a message.</div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-lg w-100 mt-2 rounded-pill fw-bold shadow-sm py-3 text-uppercase">Send Message</button>
+                            <button type="submit"
+                                class="btn btn-primary btn-lg w-100 mt-2 rounded-pill fw-bold shadow-sm py-3 text-uppercase">Send
+                                Message</button>
                         </div>
                     </form>
-                    
+
                     <button type="button" class="btn btn-dark rounded-4 mt-4" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -167,19 +200,26 @@
     <div class="modal fade" id="modal-contact-about" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content border-0 shadow card-3 p-4 position-relative text-dark">
-                <button type="button" class="btn btn-dark rounded-circle position-absolute top-0 end-0 m-3 shadow d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; z-index: 1050;" data-bs-dismiss="modal" aria-label="Close">✕</button>
+                <button type="button"
+                    class="btn btn-dark rounded-circle position-absolute top-0 end-0 m-3 shadow d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px; z-index: 1050;" data-bs-dismiss="modal"
+                    aria-label="Close">✕</button>
                 <div class="mt-4 pt-2 w-100 mx-auto" style="max-width: 800px;">
                     <h2>Owners & Partners</h2>
-                    
+
                     <div class="mt-4">
                         <h3 class="h4 fw-bold">About Our Team</h3>
-                        <p class="fs-5">Snazzy Paws Grooming is proudly owned and operated by passionate pet lovers dedicated to providing top-tier, stress-free care for your furry best friends.</p>
+                        <p class="fs-5">Snazzy Paws Grooming is proudly owned and operated by passionate pet lovers
+                            dedicated to providing top-tier, stress-free care for your furry best friends.</p>
 
                         <h3 class="h4 fw-bold mt-4 pt-2">Our Local Partners</h3>
                         <ul class="list-unstyled custom-paws-list mt-3">
-                            <li><strong class="text-dark">Te Rapa Vet Clinic:</strong> Trusted veterinary care located in the same shopping centre.</li>
-                            <li><strong class="text-dark">Te Rapa Pet's R Us:</strong> Premium food and accessories for healthy pets.</li>
-                            <li><strong class="text-dark">Fur-real Training:</strong> Expert behavioral classes and puppy school.</li>
+                            <li><strong class="text-dark">Te Rapa Vet Clinic:</strong> Trusted veterinary care located
+                                in the same shopping centre.</li>
+                            <li><strong class="text-dark">Te Rapa Pet's R Us:</strong> Premium food and accessories for
+                                healthy pets.</li>
+                            <li><strong class="text-dark">Fur-real Training:</strong> Expert behavioral classes and
+                                puppy school.</li>
                         </ul>
                     </div>
 
@@ -222,4 +262,5 @@
         })()
     </script>
 </body>
+
 </html>
