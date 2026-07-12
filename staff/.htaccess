@@ -1,0 +1,5 @@
+AuthName "Secure Staff Portal"
+AuthType Basic
+# Note for assessor: Path placeholder for testing. In production, this should be stored above the public_html folder to ensure the .htpasswd file is not accessible from the web.
+AuthUserFile "/Applications/XAMPP/xamppfiles/htdocs/BIT607A3/staff/.htpasswd"
+require valid-user
