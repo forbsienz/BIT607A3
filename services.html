@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SAMPLE1234"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SAMPLE');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws - services</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="bg-primary shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark py-2 py-md-3">
+            <div class="container-fluid px-3 align-items-center">
+                <a class="navbar-brand d-flex align-items-center me-0 d-md-none" href="#" style="max-width: 80%;">
+                    <img src="images/snazzy-paws-logo.png" alt="Snazzy Paws Logo" class="logo-fluid me-2">
+                    <div class="d-flex flex-column" style="min-width: 0;">
+                        <h1 class="m-0 fs-fluid-title text-white lh-sm text-truncate">Snazzy Paws Grooming</h1>
+                        <span class="text-uppercase fw-bold text-white mt-1" style="font-size: 0.8rem;">Services</span>
+                    </div>
+                </a>
+                <a class="navbar-brand d-none d-md-flex align-items-center me-4 p-0" href="#">
+                    <img src="images/snazzy-paws-logo.png" alt="Snazzy Paws Logo" class="logo-fluid">
+                </a>
+                <button class="navbar-toggler border-0 px-1 shadow-none ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-column align-items-stretch" id="navbarContent">
+                    <h1 class="d-none d-md-block m-0 mb-2 fs-fluid-title text-white text-center">Snazzy Paws Grooming
+                    </h1>
+                    <ul class="navbar-nav nav-fill w-100 snazzy-nav gap-2 gap-md-0 mt-3 mt-md-0 text-center">
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-semibold" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="booking.html">Booking</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1">
+        <section class="text-center py-5">
+            <h2>Grooming Services</h2>
+            <p>Select a package below to explore pricing, treatments, and at home care tips.</p>
+        </section>
+
+        <div class="container-fluid position-relative z-2 px-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-3 card-wrapper">
+                <div class="col">
+                    <div class="card h-100 shadow rounded-4 border-0 p-4 card-1 text-dark">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title fw-bold">Standard Services</h2>
+                            <p class="card-text mt-3">Everyday grooming essentials for your dog.</p>
+                            <button type="button" class="btn btn-dark mt-auto align-self-start rounded-4"
+                                data-bs-toggle="modal" data-bs-target="#standardServicesModal">View Pricing</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow rounded-4 border-0 p-4 card-2 text-dark">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title fw-bold">Specialised Treatments</h2>
+                            <p class="card-text mt-3">Targeted care and luxurious add-on packages.</p>
+                            <button type="button" class="btn btn-dark mt-auto align-self-start rounded-4"
+                                data-bs-toggle="modal" data-bs-target="#specialisedTreatmentsModal">View
+                                Pricing</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow rounded-4 border-0 p-4 card-3 text-dark">
+                        <div class="card-body d-flex flex-column">
+                            <h2 class="card-title fw-bold">Dog Care Education</h2>
+                            <p class="card-text mt-3">Best practices for grooming your dog at home.</p>
+                            <button type="button" class="btn btn-dark mt-auto align-self-start rounded-4"
+                                data-bs-toggle="modal" data-bs-target="#educationalModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <div class="modal fade" id="standardServicesModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow card-1 p-4 position-relative">
+                <button type="button"
+                    class="btn btn-dark rounded-circle position-absolute top-0 end-0 m-3 shadow d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px; z-index: 1050;" data-bs-dismiss="modal"
+                    aria-label="Close">✕</button>
+                <div class="mt-4 pt-2">
+                    <h2>Standard Services</h2>
+                    <p>Everyday grooming essentials for your dog.</p>
+                    <p>Our core grooming services to keep your pet clean, happy, and healthy.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Service & Details</th>
+                                <th class="text-end">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Nail Trim</strong><br>Trim nails and, in some cases, filing.</td>
+                                <td class="text-end">$10-$20</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ear Cleaning</strong><br>Gentle cleaning of ears to remove wax and debris.
+                                </td>
+                                <td class="text-end">$10-$15</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Teeth Brushing</strong><br>Brushing with pet-safe toothpaste.</td>
+                                <td class="text-end">$10-$15</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bath and Brush</strong><br>Shampoo, blow-dry, brush-out and nail trim.</td>
+                                <td class="text-end">$25-$50</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Haircut</strong><br>Bath, blow-dry, haircut (based on breed standard or
+                                    owner's preference) and nail trim.</td>
+                                <td class="text-end">$45-$85</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Full Grooming Package</strong><br>Comprehensive grooming service, including
+                                    bath, haircut, teeth brushing, nail trim and ear cleaning.</td>
+                                <td class="text-end">$60-$120</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-dark rounded-4 mt-3" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="specialisedTreatmentsModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow card-2 p-4 position-relative">
+                <button type="button"
+                    class="btn btn-dark rounded-circle position-absolute top-0 end-0 m-3 shadow d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px; z-index: 1050;" data-bs-dismiss="modal"
+                    aria-label="Close">✕</button>
+                <div class="mt-4 pt-2">
+                    <h2>Specialised Services</h2>
+                    <p>Targeted care and luxurious add-on packages.</p>
+                    <p>Specific treatments for unique needs, puppies, seniors, and special breeds.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Service & Details</th>
+                                <th class="text-end">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Express Service</strong><br>For dogs that need minimal grooming or a quick
+                                    touch-up.</td>
+                                <td class="text-end">+$15-$25</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Flea and Tick Treatment</strong><br>Shampoo and preventative treatment.</td>
+                                <td class="text-end">$15-$30</td>
+                            </tr>
+                            <tr>
+                                <td><strong>De-shedding Treatment</strong><br>Special shampoo and undercoat removal (in
+                                    addition to bath or haircut).</td>
+                                <td class="text-end">+$20-$40</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Medicated Bath</strong><br>For pets with skin conditions requiring special
+                                    shampoo.</td>
+                                <td class="text-end">+$20-$40</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Puppy Package</strong><br>Introductory grooming services tailored for
+                                    puppies.</td>
+                                <td class="text-end">$30-$60</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Senior Dog Package</strong><br>Tailored for older dogs, often with special
+                                    handling and care.</td>
+                                <td class="text-end">$40-$80</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Spa Package</strong><br>Bath, haircut, teeth brushing, nail trim and
+                                    sometimes special scents or conditioners.</td>
+                                <td class="text-end">$75-$150</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Special-Breed Cuts</strong><br>Breed-specific cuts or styling based on
+                                    customer preference.</td>
+                                <td class="text-end">Quoted</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-dark rounded-4 mt-3" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="educationalModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content border-0 shadow card-3 p-4 position-relative">
+                <button type="button"
+                    class="btn btn-dark rounded-circle position-absolute top-0 end-0 m-3 shadow d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px; z-index: 1050;" data-bs-dismiss="modal"
+                    aria-label="Close">✕</button>
+                <div class="mt-4 pt-2">
+                    <h2>Dog Care Education</h2>
+                    <p>Best practices for grooming your dog at home.</p>
+                    <p>Maintaining your dog's grooming routine between salon visits is crucial for their health and
+                        happiness.</p>
+                    <ul class="list-unstyled custom-paws-list">
+                        <li><strong>Brushing:</strong> Regular brushing prevents painful matting and distributes natural
+                            oils across their coat.</li>
+                        <li><strong>Nail Care:</strong> If you can hear your dog's nails clicking on the floor, they are
+                            too long!</li>
+                        <li><strong>Ear Health:</strong> Check your dog's ears weekly for redness, bad odors, or excess
+                            wax.</li>
+                        <li><strong>Dental Hygiene:</strong> Use pet-safe toothpaste to brush their teeth regularly.
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-dark rounded-4 mt-3" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-primary py-4 shadow-sm d-flex flex-column align-items-center justify-content-center">
+        <section class="m-0 text-white text-center">
+            <p class="fw-semibold m-0">Opening Hours: Mon-Sat 9am - 5pm</p>
+            <div class="mt-2">
+                <a href="privacy.html" class="text-white text-decoration-none me-3 small">Privacy Policy</a>
+                <a href="staff/roster.html" class="text-white text-decoration-none small">Staff Portal</a>
+            </div>
+        </section>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

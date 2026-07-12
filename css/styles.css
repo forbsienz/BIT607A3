@@ -1,0 +1,113 @@
+:root {
+  --bs-primary: #136F63; 
+  --bs-primary-rgb: 19, 111, 99;
+  --bs-body-bg: #0f172a; 
+  --bs-body-color: #ffffff; 
+}
+body { font-family: 'Montserrat', sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; 
+}
+
+.snazzy-nav .nav-link { color: #ffffff; }
+.snazzy-nav .nav-link:hover, .snazzy-nav .nav-link.active {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Card Gradient Backgrounds */
+.card-1 { background: linear-gradient(135deg, #4DD0E1 0%, #00838F 100%); }
+.card-2 { background: linear-gradient(135deg, #81C784 0%, #2E7D32 100%); }
+.card-3 { background: linear-gradient(135deg, #FFF176 0%, #FF8F00 100%); }
+
+/* Responsive Titles and Logo */
+.card-title { font-size: clamp(1.1rem, 2vw, 1.5rem) !important; }
+.fs-fluid-title { font-size: clamp(1.1rem, 4.5vw, 1.75rem) !important; }
+.logo-fluid { max-height: clamp(50px, 8vw, 80px); width: auto; object-fit: contain; }
+
+/* Layout centering container */
+.card-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Modal and Text Styling */
+.modal-content { color: #000; }
+
+/* Table styling matching the original site's transparency effect */
+.table {
+    --bs-table-bg: rgba(255, 255, 255, 0.4); 
+    --bs-table-color: #000000;
+    
+    border-collapse: separate; 
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.table th, .table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.table th {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Fix for background clipping on scrolling full-screen modals */
+.modal-fullscreen .modal-content {
+    height: auto !important;
+    min-height: 100%;
+}
+
+/* Custom Dog Paw Bullets */
+.custom-paws-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.custom-paws-list li::before {
+    content: "🐾";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 0.9rem;
+}
+
+/* Gallery Hover Effect */
+.grid-item {
+    background-color: var(--bs-primary);
+    cursor: pointer;
+}
+
+.gallery-img {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.grid-item:hover .gallery-img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Form Checkbox Override */
+.form-check-input {
+    background-color: #ffffff !important;
+    border-color: #ced4da !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
